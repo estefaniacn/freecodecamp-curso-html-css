@@ -64,4 +64,4 @@ Si el nombre del archivo CSS no es `style.css`, deberás modificar el valor del 
 -------
 
 ## 🔹 Enlace al Curso
-Si deseas ver el curso en nuestro canal de YouTube, haz clic en este enlace: 
+Si deseas ver el curso en nuestro canal de YouTube, haz clic en este enlace: https://www.youtube.com/watch?v=XqFR2lqBYPs&feature=youtu.be
