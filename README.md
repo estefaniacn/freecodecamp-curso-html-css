@@ -60,11 +60,12 @@ El nombre del archivo CSS debería ser `style.css` para que se reconozca correct
 Si el nombre del archivo CSS no es `style.css`, deberás modificar el valor del atributo `href` de este elemento en el archivo HTML e indicar el nombre del archivo y/o su ubicación:
 
 `
-    <link href="style.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
 `
 
 -------
 
 ## 🔹 Enlace al Curso
 
-Si deseas ver el curso en nuestro canal de YouTube, haz clic en este [enlace] (https://www.youtube.com/watch?v=XqFR2lqBYPs&feature=youtu.be)
+Si deseas ver el curso en nuestro canal de YouTube, haz clic en este (https://www.youtube.com/watch?v=XqFR2lqBYPs&feature=youtu.be) <a href="https://www.youtube.com/watch?v=XqFR2lqBYPs&feature=youtu.be" target="_blank">enlace</a>
