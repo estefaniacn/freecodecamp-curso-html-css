@@ -1,73 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <title>AppDeGatos</title>
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <h2>AppDeGatos</h2>
-    <main>
-      <h3>Imágenes de Gatos:</h3>
-      <!-- TODO: Agregar enlace a imágenes de gatos -->
-      <p>Haz click aquí para ver más <a href="#" target="_blank" rel="noopener noreferrer">imágenes de gatos.</a></p>
+    <link href="index.css" rel="stylesheet">
 
-      <a href="#" target="_blank" rel="noopener noreferrer"><img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda."></a>
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
 
-      <hr>
+<body>
 
-      <h3>Listas de Gatos</h3>
+    <header class="header">
 
-      <div>
-        <p>Cosas que los gatos <em>aman</em>:</p>
-        <ul>
-          <li>Menta gatuna</li>
-          <li>Apuntadores Láser</li>
-          <li><s>Lasaña</s></li>
-        </ul>
-        <img src="imagenes/lasana.jpg" alt="Lasaña">
+        <h2>App De Gatos</h2>
 
-        <p>Cosas que los gatos <strong>odian</strong>:</p>
-        <ol>
-          <li>Tratamientos antipulgas</li>
-          <li>Truenos</li>
-          <li>Otros gatos</li>
-        </ol>
-      </div>
-      <img src="imagenes/gatos.jpg" alt="Gatos">
+    </header>
 
-      <form action="/enviar-respuesta">
-        <!-- Botones de Radio -->
-        <label for="interior">
-          <input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior
-        </label>
-        <br>
-        <label for="exterior">
-          <input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior
-        </label>
-        <br>
-      
-        <!-- Casillas de Verificación -->
-        <label for="carinoso">
-          <input id="carinoso" type="checkbox" value="carinoso" name="personalidad" checked>Cariñoso
-        </label>
-        <br>
-        <label for="perezoso">
-          <input id="perezoso" type="checkbox" value="perezoso" name="personalidad">Perezoso
-        </label>
-        <br>
-        <label for="energico">
-          <input id="energico" type="checkbox" value="energico" name="personalidad">Enérgico
-        </label>
-        <br>
 
-        <!-- Texto y Botón Enviar -->
-        <input type="text" placeholder="URL de la foto de tu gato" required><br>
-        <button type="submit">Enviar</button>
-      </form>
+    <main class="main container">
+
+        <!-- TITULO -->
+        <div class="contenedorTitulo">
+
+            <h3>Imágenes de Gatos:</h3>
+
+            <p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    Más de gatos.
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- IMAGENES DE GATOS -->
+        <div class="contenedorImagenesGatos">
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda.">
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="https://s.france24.com/media/display/8c13820c-5b0e-11e9-bf90-005056a964fe/w:980/p:16x9/gato.jpg"
+                    alt="Un lindo gato naranja recostado sobre su espalda.">
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda.">
+            </a>
+
+        </div>
+
+        <hr>
+
+        <h3>Listas de Gatos</h3>
+
+        <div class="contenedorListaDeGatos">
+
+            <p>Cosas que los gatos <em>aman</em>:</p>
+
+            <ul>
+                <li>Menta gatuna</li>
+                <li>Apuntadores Láser</li>
+                <li><s>Lasaña</s></li>
+            </ul>
+
+            <img src="https://cope-cdnmed.cope.es/resources/jpg/1/0/1623751761901.jpg" alt="Lasaña">
+
+            <p>Cosas que los gatos <strong>odian</strong>:</p>
+
+            <ol>
+                <li>Tratamientos antipulgas</li>
+                <li>Truenos</li>
+                <li>Otros gatos</li>
+            </ol>
+
+        </div>
+
+        <img class="gatoRaro"
+            src="https://www.nacionrex.com/export/sites/debate/img/2023/08/05/memes-gatos-2.jpg_687446817.jpg"
+            alt="Gatos">
+
+
+        <form>
+
+            <div class="contenedorFormularioRadio">
+
+                <!-- Botones de Radio -->
+                <label for="interior">
+                    <input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior
+                </label>
+
+                <br>
+
+                <label for="exterior">
+                    <input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior
+                </label>
+
+                <br>
+
+            </div>
+
+            <div class="contenedorCasillasVerificacion">
+
+                <!-- Casillas de Verificación -->
+                <label for="carinoso">
+                    <input id="carinoso" type="checkbox" value="carinoso" name="personalidad" checked>Cariñoso
+                </label>
+
+                <br>
+
+                <label for="perezoso">
+                    <input id="perezoso" type="checkbox" value="perezoso" name="personalidad">Perezoso
+                </label>
+
+                <br>
+
+                <label for="energico">
+                    <input id="energico" type="checkbox" value="energico" name="personalidad">Enérgico
+                </label>
+
+                <br>
+
+            </div>
+
+
+            <!-- Texto y Botón Enviar -->
+            <input type="text" class="inputUrl form-control" placeholder="URL de la foto de tu gato" required><br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+
     </main>
 
     <footer>
-      <p><small>Sin Derechos de Autor - <a href="https://www.freecodecamp.org/espanol/">freeCodeCamp.org</a></small></p>
+        <p>
+            <small>Sin Derechos de Autor - <a href="https://www.freecodecamp.org/espanol/">freeCodeCamp.org</a></small>
+        </p>
     </footer>
-  </body>
+
+    <!-- script boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
